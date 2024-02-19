@@ -1,11 +1,19 @@
 {
-	"description": "My hobby projects, most of them are Nextjs apps deployed to Vercel.",
-	"githubUsername": "octocat",
-	"avatarUrl": "",
-	"displayName": "",
-	"email": "",
-	"projects": {
-		"blacklist": [],
-		"heroNames": []
-	}
+  "username": "ericlifs",
+  "subheading": "Hi, my name is Eric Lifszyc 🇦🇷",
+  "hobbies": [
+    "I love building great web apps",
+    "I love building awesome mobile apps",
+    "I love learning new stuff"
+  ],
+
+  "description": "My hobby projects, most of them are Nextjs apps deployed to Vercel.",
+  "githubUsername": "octocat",
+  "avatarUrl": "",
+  "displayName": "",
+  "email": "",
+  "projects": {
+    "blacklist": [],
+    "heroNames": []
+  }
 }

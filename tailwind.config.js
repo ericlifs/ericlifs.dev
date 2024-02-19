@@ -1,4 +1,4 @@
-import defaultTheme from 'tailwindcss/defaultTheme';
+import defaultTheme from "tailwindcss/defaultTheme";
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -7,9 +7,11 @@ module.exports = {
 		// "./mdx-components.tsx",
 		// "content/**/*.mdx",
 	],
-
 	theme: {
 		extend: {
+			colors: {
+				primary: "rgb(217 119 6)",
+			},
 			typography: {
 				quoteless: {
 					css: {

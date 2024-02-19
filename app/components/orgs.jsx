@@ -3,8 +3,7 @@ import Image from "next/image";
 import { getUserOrganizations } from "../data";
 
 export const ProfileOrganizations = async ({ username }) => {
-
-	const organizations = (await getUserOrganizations(username)).data.user?.organizations.nodes;
+	const organizations = []]
 
 	return (
 		<p>I'm building stuff{
