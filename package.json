@@ -11,7 +11,7 @@
   "dependencies": {
     "@codaworks/react-glow": "^1.0.6",
     "@primer/octicons-react": "^19.8.0",
-    "@primer/react": "^35.32.2",
+    "@primer/react": "^36.9.0",
     "@vercel/analytics": "^1.1.1",
     "dotenv": "^16.3.1",
     "eslint-config-next": "^14.0.2",
