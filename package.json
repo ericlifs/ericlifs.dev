@@ -9,6 +9,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@codaworks/react-glow": "^1.0.6",
     "@primer/octicons-react": "^19.8.0",
     "@primer/react": "^35.32.2",
     "@vercel/analytics": "^1.1.1",

@@ -1,20 +1,23 @@
+"use client";
+
+import { GlowCapture, Glow } from "@codaworks/react-glow";
 import { ChevronRightIcon } from "@primer/octicons-react";
 
 import data from "../../data.json";
 
 export default function ContactForm() {
 	return (
-		<>
+		<GlowCapture color="red">
 			<form
 				action={`https://formspree.io/f/${data.contact.form.formId}`}
-				className="w-full space-y-4"
+				className="w-full space-y-4 flex flex-col items-center"
 				method="POST"
 			>
 				<label className="font-display text-lg text-white mb-2">
 					Send me a message
 				</label>
 
-				<div>
+				<div className="w-full">
 					<label className="sr-only" htmlFor="name">
 						Name
 					</label>
@@ -28,7 +31,7 @@ export default function ContactForm() {
 					/>
 				</div>
 
-				<div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+				<div className="w-full grid grid-cols-1 gap-4 sm:grid-cols-2">
 					<div>
 						<label className="sr-only" htmlFor="email">
 							Email
@@ -43,7 +46,7 @@ export default function ContactForm() {
 						/>
 					</div>
 
-					<div>
+					<div className="w-full">
 						<label className="sr-only" htmlFor="phone">
 							Phone
 						</label>
@@ -58,7 +61,7 @@ export default function ContactForm() {
 					</div>
 				</div>
 
-				<div>
+				<div className="w-full">
 					<label className="sr-only" htmlFor="message">
 						Message
 					</label>
@@ -71,15 +74,17 @@ export default function ContactForm() {
 					/>
 				</div>
 
-				<button
-					type="submit"
-					className="flex items-center justify-center rounded-xl px-5 py-3 text-white bg-zinc-900 hover:bg-zinc-800 shadow-sm transition-all duration-500 ease mx-auto font-display"
-				>
-					<span className="font-medium text-base">Send</span>
+				<Glow color="rgb(217 119 6)">
+					<button
+						type="submit"
+						className="flex items-center justify-center rounded-xl px-10 py-3 text-white font-display border border-zinc-600 glow:border-glow glow:ring-glow glow:bg-glow/[.15]"
+					>
+						<span className="font-medium text-base">Send</span>
 
-					<ChevronRightIcon size={20} />
-				</button>
+						<ChevronRightIcon size={20} />
+					</button>
+				</Glow>
 			</form>
-		</>
+		</GlowCapture>
 	);
 }
