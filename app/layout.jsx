@@ -2,18 +2,13 @@ import "../global.css";
 import { Inter } from "next/font/google";
 import LocalFont from "next/font/local";
 import { Analytics } from '@vercel/analytics/react';
-import data from "../data.json";
 
-const username = process.env.GITHUB_USERNAME || data.githubUsername;
-const displayName = data.displayName || username;
+import data from "../data.json";
 
 /** @type {import('next').Metadata} */
 export const metadata = {
-	title: {
-		default: [username, '\'s portfolio'].join(""),
-		template: "%s | " + data.displayName + "'s portfolio",
-	},
-	description: 'GitHub portfolio for ' + displayName,
+	title: data.username,
+	description: `Portfolio for ${data.username}`,
 	robots: {
 		index: true,
 		follow: true,
@@ -34,6 +29,7 @@ export const metadata = {
 		},
 	]
 };
+
 const inter = Inter({
 	subsets: ["latin"],
 	variable: "--font-inter",
@@ -49,11 +45,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en" className={[inter.variable, calSans.variable].join(" ")}>
-			<body
-				className={`bg-black ${
-					process.env.NODE_ENV === "development" ? "debug-screens" : ''
-				}`}
-			>
+			<body className="bg-black">
 				<Analytics />
 				{children}
 			</body>
