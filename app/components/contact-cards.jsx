@@ -1,0 +1,39 @@
+import { MarkGithubIcon, MailIcon, LinkIcon } from "@primer/octicons-react";
+import Link from "next/link";
+
+import data from "../../data.json";
+
+import Card from "./card";
+
+const ICONS = {
+	mail: <MailIcon size={20} />,
+	linkedin: <LinkIcon size={20} />,
+	github: <MarkGithubIcon size={20} />,
+};
+
+export default function ContactCards() {
+	return (
+		<div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 md:grid-cols-3 lg:gap-4">
+			{data.contact.cards.map((card) => (
+				<Card key={card.id}>
+					<Link
+						href={card.link}
+						target="_blank"
+						className="relative flex flex-col gap-4 md:gap-6 duration-700 group p-4 sm:p-8 lg:p-4"
+					>
+						<span className="flex items-center space-x-4">
+							<span className="relative z-10 flex items-center justify-center w-12 h-12 text-sm duration-1000 border rounded-full text-zinc-200 group-hover:text-white group-hover:bg-zinc-900 border-zinc-500 bg-zinc-900 group-hover:border-zinc-200 drop-shadow-orange">
+								{ICONS[card.id]}
+							</span>
+							<span className="font-display text-white">{card.label}</span>
+						</span>
+
+						<span className="whitespace-nowrap text-xl duration-150 lg:text-2xl text-zinc-200 group-hover:text-white font-display">
+							{card.value}
+						</span>
+					</Link>
+				</Card>
+			))}
+		</div>
+	);
+}

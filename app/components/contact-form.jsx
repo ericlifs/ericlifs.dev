@@ -1,0 +1,85 @@
+import { ChevronRightIcon } from "@primer/octicons-react";
+
+import data from "../../data.json";
+
+export default function ContactForm() {
+	return (
+		<>
+			<form
+				action={`https://formspree.io/f/${data.contact.form.formId}`}
+				className="w-full space-y-4"
+				method="POST"
+			>
+				<label className="font-display text-lg text-white mb-2">
+					Send me a message
+				</label>
+
+				<div>
+					<label className="sr-only" htmlFor="name">
+						Name
+					</label>
+					<input
+						className="w-full rounded-xl p-3 text-base outline-none border text-white bg-black border-zinc-600 focus:border-zinc-600 transition ease font-display"
+						placeholder="Name"
+						type="text"
+						id="name"
+						name="name"
+						required
+					/>
+				</div>
+
+				<div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+					<div>
+						<label className="sr-only" htmlFor="email">
+							Email
+						</label>
+						<input
+							className="w-full rounded-xl p-3 text-base outline-none border text-white bg-black border-zinc-600 focus:border-zinc-600 transition ease font-display"
+							placeholder="Email"
+							type="email"
+							id="email"
+							name="email"
+							required
+						/>
+					</div>
+
+					<div>
+						<label className="sr-only" htmlFor="phone">
+							Phone
+						</label>
+						<input
+							className="w-full rounded-xl p-3 text-base outline-none border text-white bg-black border-zinc-600 focus:border-zinc-600 transition ease font-display"
+							placeholder="Phone"
+							type="tel"
+							id="phone"
+							name="phone"
+							required
+						/>
+					</div>
+				</div>
+
+				<div>
+					<label className="sr-only" htmlFor="message">
+						Message
+					</label>
+					<textarea
+						className="w-full h-32 rounded-xl p-3 text-base outline-none border text-white bg-black border-zinc-600 focus:border-zinc-600 transition ease font-display"
+						placeholder="Message"
+						id="message"
+						name="message"
+						required
+					/>
+				</div>
+
+				<button
+					type="submit"
+					className="flex items-center justify-center rounded-xl px-5 py-3 text-white bg-zinc-900 hover:bg-zinc-800 shadow-sm transition-all duration-500 ease mx-auto font-display"
+				>
+					<span className="font-medium text-base">Send</span>
+
+					<ChevronRightIcon size={20} />
+				</button>
+			</form>
+		</>
+	);
+}

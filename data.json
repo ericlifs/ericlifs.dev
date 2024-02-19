@@ -6,6 +6,31 @@
     "I love building awesome mobile apps",
     "I love learning new stuff"
   ],
+  "contact": {
+    "form": {
+      "formId": "xnqedwkb"
+    },
+    "cards": [
+      {
+        "id": "mail",
+        "label": "Email",
+        "value": "hello@ericlifs.dev",
+        "link": "mailto:hello@ericlifs.dev"
+      },
+      {
+        "id": "linkedin",
+        "label": "Linkedin",
+        "value": "Eric Lifszyc",
+        "link": "https://www.linkedin.com/in/ericlifs/"
+      },
+      {
+        "id": "github",
+        "label": "Github",
+        "value": "ericlifs",
+        "link": "https://github.com/ericlifs"
+      }
+    ]
+  },
 
   "description": "My hobby projects, most of them are Nextjs apps deployed to Vercel.",
   "githubUsername": "octocat",

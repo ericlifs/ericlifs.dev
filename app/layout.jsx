@@ -1,7 +1,9 @@
-import "../global.css";
 import { Inter } from "next/font/google";
 import LocalFont from "next/font/local";
-import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from "@vercel/analytics/react";
+import tailshake from "tailshake";
+
+import "../global.css";
 
 import data from "../data.json";
 
@@ -27,7 +29,7 @@ export const metadata = {
 			sizes: "any",
 			type: "image/svg+xml",
 		},
-	]
+	],
 };
 
 const inter = Inter({
@@ -40,12 +42,16 @@ const calSans = LocalFont({
 	variable: "--font-calsans",
 });
 
-export default function RootLayout({
-	children,
-}) {
+export default function RootLayout({ children }) {
 	return (
-		<html lang="en" className={[inter.variable, calSans.variable].join(" ")}>
-			<body className="bg-black">
+		<html
+			lang="en"
+			className={tailshake(
+				"bg-black",
+				[inter.variable, calSans.variable].join(" "),
+			)}
+		>
+			<body className="bg-gradient-to-tl from-black via-zinc-600/30 py-20 to-black">
 				<Analytics />
 				{children}
 			</body>
