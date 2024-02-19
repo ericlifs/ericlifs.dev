@@ -1,80 +1,57 @@
-"use client";
+import tailshake from "tailshake";
 
-import { Timeline, Octicon, RelativeTime, ThemeProvider } from "@primer/react";
-import { GitBranchIcon, GitCommitIcon, GitPullRequestIcon, TagIcon } from '@primer/octicons-react';
-import Link from "next/link";
-
-export const UserTimeline = ({ recentUserActivity }) => {
-	
-	const distinctTypes = [...new Set(recentUserActivity.map((activity) => activity.type))];
+export const Timeline = ({ children, title }) => {
 	return (
-		<div>
-			<ThemeProvider colorMode="dark">
-			<Timeline clipSidebar>
-				<div className="text-zinc-500 text-xs flex items-center gap-1 ">
-					{JSON.stringify(distinctTypes, null, 4)}
-				</div>
-				{recentUserActivity
-				// No delete events
-				.filter((activity) => activity.type !== 'DeleteEvent')
-				// .slice(0, 100)
-				.map((activity) => {
-					let repo = activity.repo.name;
-					let baseUrl = 'https://github.com/' + repo;
-					let url;
-					let message = activity.payload.commits?.[0]?.message;
-					let icon;
-					switch (activity.type) {
-						case 'PushEvent':
-							icon = GitCommitIcon;
-							message = 'Pushed ' + activity.payload.size + ' commit' + (activity.payload.size === 1 ? '' : 's') + ' to ' + activity.payload.ref;
-							break;
-							case 'PullRequestEvent':
-								// TODO: avatairpair with dependabot
-								icon = GitPullRequestIcon;
-							const merged = activity.payload.pull_request.merged;
-							const prNumber = activity.payload.pull_request.number;
-							if (merged) {
-								// message: "#PR was merged by {actor.login}"
-								message =  ' was merged by ' + activity.actor.login;
-							} else {
-								message = activity.payload.action + ' a pull request.'
-							}
-							break;
-						case 'CreateEvent':
-							const isTag = activity.payload.ref_type === 'tag';
-							icon = isTag ? TagIcon : GitBranchIcon;
-							const href = <Link href={baseUrl + '/tree/' + activity.payload.ref} target="_blank">{activity.payload.ref}</Link>;
-							message = <span>
-								Created {activity.payload.ref_type} {href}
-							</span>
-							
-							break;
-						default:
-							icon = GitCommitIcon;
-							message = activity.type;
-							break;
-					}
+		<div className="w-full mb-16">
+			<h2 className="font-display text-2xl tracking-tight mb-8 text-white text-center lg:text-start">
+				{title}
+			</h2>
 
-					return <Timeline.Item key={activity.id}>
-						<Timeline.Badge>
-							<Octicon icon={icon} />
-						</Timeline.Badge>
-						<Timeline.Body>
-							<span className="text-zinc-500 text-xs flex items-center gap-1 ">
-								{repo}: {message}<br />
-								<RelativeTime date={new Date(activity.created_at)} />
-								{/* Repo: {activity.repo.name}<br /> */}
-								{/* {JSON.stringify(activtipec22
-									vity?.payload, null, 4)} */}
-							</span>
-						</Timeline.Body>
-						
-					</Timeline.Item>
-				}
-				)}
-			</Timeline>
-			</ThemeProvider>
+			{children}
 		</div>
 	);
 };
+
+export const TimelineEvent = ({ active, children, last, className }) => {
+	return (
+		<div
+			className={tailshake(
+				"w-full flex justify-start border-l gap-6",
+				last ? "!border-l-transparent" : "pb-16 !border-l-zinc-400",
+				className,
+			)}
+		>
+			<div className="relative">
+				<div
+					className={tailshake(
+						"absolute rounded-full aspect-square outline-black",
+						active
+							? "bg-primary left-[-8.5px] w-4 h-4"
+							: "bg-zinc-400 w-3 h-3 left-[-6.5px]",
+					)}
+				>
+					{active && (
+						<div
+							className={tailshake(
+								"absolute top-0 left-0 rounded-full -z-10 w-4 h-4 bg-primary animate-ping aspect-square",
+							)}
+						/>
+					)}
+				</div>
+			</div>
+			<div className="mt-[-4px] flex flex-col gap-6">{children}</div>
+		</div>
+	);
+};
+
+const TimelineEventTitle = ({ children }) => (
+	<p className="text-xs text-zinc-400 flex flex-col items-start">{children}</p>
+);
+
+const TimelineEventDescription = ({ children }) => (
+	<p className="text-base text-white">{children}</p>
+);
+
+TimelineEvent.Title = TimelineEventTitle;
+
+TimelineEvent.Description = TimelineEventDescription;
