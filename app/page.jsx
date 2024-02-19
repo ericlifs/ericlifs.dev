@@ -1,17 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
-import React from "react";
 
 import data from "../data.json";
 
 import TypeAnimation from "./components/type-animation";
 import ContactCards from "./components/contact-cards";
 import ContactForm from "./components/contact-form";
-
-const navigation = [
-	{ name: "Projects", href: "/projects" },
-	{ name: "Contact", href: "/contact" },
-];
+import WorkExperience from "./components/work-experience";
 
 export default function Home() {
 	return (
@@ -39,6 +34,7 @@ export default function Home() {
 			</div>
 
 			<div className="mx-auto w-full max-lg:px-5 lg:max-w-5xl space-y-20 mt-20">
+				<WorkExperience />
 				<ContactCards />
 				<ContactForm />
 			</div>

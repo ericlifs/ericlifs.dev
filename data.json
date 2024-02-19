@@ -6,6 +6,25 @@
     "I love building awesome mobile apps",
     "I love learning new stuff"
   ],
+  "work": [
+    {
+      "id": "samsung",
+      "image": "/samsung.svg",
+      "link": "https://www.samsung.com/us/virtualkitchenconsultant",
+      "role": "Kitchen Consultant - Fullstack Engineer",
+      "description": "This platform was created to facilitate the US consumers' purchase decision by helping them find, learn about, evaluate, pick, visualize and buy the appliance(s) matching their needs and profile.",
+      "pills": [
+        "React",
+        "Redux",
+        "Sass",
+        "Node",
+        "Express",
+        "Jira",
+        "Git",
+        "SCRUM"
+      ]
+    }
+  ],
   "contact": {
     "form": {
       "formId": "xnqedwkb"
