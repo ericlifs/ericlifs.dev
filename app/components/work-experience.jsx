@@ -22,24 +22,22 @@ export default function WorkExperience() {
 							className={works === 1 ? "!border-none" : ""}
 						>
 							<TimelineEvent.Title>
-								<Link
-									href={work.link}
-									className="w-auto space-y-2"
-									target="_blank"
-								>
+								<Link href={work.link} className="w-auto" target="_blank">
 									<Image
 										alt={work.id}
 										src={work.image.src}
 										width={work.image.width || 91}
 										height={32}
 									/>
-									<span>{work.role}</span>
+									<span className="font-display mt-4">{work.role}</span>
 								</Link>
 							</TimelineEvent.Title>
 
-							<TimelineEvent.Description>
-								{work.description}
-							</TimelineEvent.Description>
+							{Boolean(work.description) && (
+								<TimelineEvent.Description>
+									{work.description}
+								</TimelineEvent.Description>
+							)}
 
 							<div className="flex space-x-4 overflow-x-scroll max-sm:pb-4">
 								{work.pills.map((pill) => (

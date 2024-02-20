@@ -2,30 +2,38 @@
   "username": "ericlifs",
   "subheading": "Hi, my name is Eric Lifszyc 🇦🇷",
   "hobbies": [
+    "I love my job",
     "I love building great web solutions",
     "I love building awesome mobile applications",
-    "I love learning new stuff",
-    "I love pushing the limits"
+    "I love learning new stuff"
   ],
   "about": [
-    "I'm a proficient 29 years old frontend engineer and technical lead with 10+ years of experience who loves his job.",
+    "I'm a proficient 29 years old frontend engineer and technical lead with 10+ years of experience.",
     "I'm fast-learner and I have a strong independence and passion about always learning and continuously pushing my boundaries. Very communicative and efficient in helping everyone on the team in order to reach a goal together."
   ],
   "stack": {
     "web": {
-      "title": "Web apps",
+      "title": "Web",
       "pills": [
         "next 14",
         "vite",
         "react",
         "tailwindcss",
+        "styled-components",
         "zustand",
         "react-query"
       ]
     },
     "mobile": {
-      "title": "Mobile apps",
-      "pills": ["expo", "expo router", "nativewind", "zustand", "react-query"]
+      "title": "Mobile",
+      "pills": [
+        "expo",
+        "expo router",
+        "nativewind",
+        "styled-components",
+        "zustand",
+        "react-query"
+      ]
     },
     "learning": {
       "title": "Currently learning (or planning)",
@@ -46,9 +54,9 @@
       "image": {
         "src": "/work/dolby.svg"
       },
-      "link": "https://www.audi.com/en/myaudi.html",
+      "link": "https://www.dolby.com/lovemore/",
       "role": "Dolby Love More - Frontend Technical Leader & Engineer",
-      "description": "Architectured and developed from scratch a cross-platform site (web, ios & tvos app) for Dolby, the largest American company specialized in audio noise reduction and audio encoding/compression.",
+      "description": "",
       "pills": [
         "React",
         "React-Query",
@@ -66,9 +74,9 @@
       "image": {
         "src": "/work/isc2.svg"
       },
-      "link": "https://www.audi.com/en/myaudi.html",
+      "link": "https://www.isc2.org/",
       "role": "ISC2 - Frontend Technical Leader & Engineer",
-      "description": "Architectured and developed from scratch a cross-platform site (web, ios & tvos app) for Dolby, the largest American company specialized in audio noise reduction and audio encoding/compression.",
+      "description": "",
       "pills": [
         "React",
         "Next",
@@ -87,9 +95,9 @@
       "image": {
         "src": "/work/aerolineas.svg"
       },
-      "link": "https://www.audi.com/en/myaudi.html",
+      "link": "https://www.aerolineas.com.ar/",
       "role": "Aerolineas Argentinas - Technical Lead & Frontend Engineer",
-      "description": "myAudi is the key to the digital, networked world of Audi. This app is where the users will find innovative services that can now use even more efficiently thanks to myAudi. Within this portal a variety of activities can be done, such as schedule a service appointment, get personal vehicle details, receive a vehicle status report, be informed of news centred round Audi, change the setting for all the services or send personal GPS destinations to an Audi vehicle.",
+      "description": "",
       "pills": [
         "React",
         "React Native",
@@ -106,7 +114,7 @@
       "image": {
         "src": "/work/dolby.svg"
       },
-      "link": "https://www.audi.com/en/myaudi.html",
+      "link": "https://apps.apple.com/us/app/dolby-xp/id1532001619",
       "role": "Dolby XP - Frontend Technical Leader & Engineer",
       "description": "Architectured and developed from scratch a cross-platform site (web, ios & tvos app) for Dolby, the largest American company specialized in audio noise reduction and audio encoding/compression.",
       "pills": [
@@ -148,7 +156,7 @@
         "src": "/work/dot.svg",
         "width": 60
       },
-      "link": "https://www.audi.com/en/myaudi.html",
+      "link": "https://www.dotfoods.com/",
       "role": "DotFoods - Frontend Engineer",
       "description": "Dot Foods is the largest foodservice redistribution company in the United States. This company offers over 112,000 products from 830 food industry manufacturers. Dot consolidates those products and delivers in less-than-truckload quantities to distributors nationwide on a weekly basis. Distributors can buy a mix of temperatures and products, with a combined minimum of just 5,000 pounds.",
       "pills": ["VueJS", "VueX", "Sass", "Epi Server", "Jira", "Git", "SCRUM"]
@@ -158,9 +166,9 @@
       "image": {
         "src": "/work/dolby.svg"
       },
-      "link": "https://www.audi.com/en/myaudi.html",
+      "link": "https://professional.dolby.com/",
       "role": "Dolby Professional - Frontend Engineer",
-      "description": "Architectured and developed from scratch a cross-platform site (web, ios & tvos app) for Dolby, the largest American company specialized in audio noise reduction and audio encoding/compression.",
+      "description": "",
       "pills": [
         "VueJS",
         "VueX",

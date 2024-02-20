@@ -51,7 +51,9 @@ const TimelineEventTitle = ({ children }) => (
 );
 
 const TimelineEventDescription = ({ children }) => (
-	<p className="text-base text-white">{children}</p>
+	<p className="text-white font-display text-md tracking-wide leading-7">
+		{children}
+	</p>
 );
 
 TimelineEvent.Title = TimelineEventTitle;
