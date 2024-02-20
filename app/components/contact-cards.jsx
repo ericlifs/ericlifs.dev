@@ -19,7 +19,7 @@ export default function ContactCards() {
 	return (
 		<GlowCapture>
 			<SectionTitle title="Contact me" />
-			<div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 md:grid-cols-3 lg:gap-4">
+			<div className="grid w-full grid-cols-1 gap-8 mx-auto md:grid-cols-3 lg:gap-4">
 				{data.contact.cards.map((card) => (
 					<Card key={card.id}>
 						<Link

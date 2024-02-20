@@ -13,10 +13,6 @@ export default function ContactForm() {
 				className="w-full space-y-4 flex flex-col items-center"
 				method="POST"
 			>
-				<label className="font-display text-lg text-white mb-2">
-					Send me a message
-				</label>
-
 				<div className="w-full">
 					<label className="sr-only" htmlFor="name">
 						Name
