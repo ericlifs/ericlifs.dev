@@ -2,10 +2,44 @@
   "username": "ericlifs",
   "subheading": "Hi, my name is Eric Lifszyc 🇦🇷",
   "hobbies": [
-    "I love building great web apps",
-    "I love building awesome mobile apps",
-    "I love learning new stuff"
+    "I love building great web solutions",
+    "I love building awesome mobile applications",
+    "I love learning new stuff",
+    "I love pushing the limits"
   ],
+  "about": [
+    "I'm a proficient 29 years old frontend engineer and technical lead with 10+ years of experience who loves his job.",
+    "I'm fast-learner and I have a strong independence and passion about always learning and continuously pushing my boundaries. Very communicative and efficient in helping everyone on the team in order to reach a goal together."
+  ],
+  "stack": {
+    "web": {
+      "title": "Web apps",
+      "pills": [
+        "next 14",
+        "vite",
+        "react",
+        "tailwindcss",
+        "zustand",
+        "react-query"
+      ]
+    },
+    "mobile": {
+      "title": "Mobile apps",
+      "pills": ["expo", "expo router", "nativewind", "zustand", "react-query"]
+    },
+    "learning": {
+      "title": "Currently learning (or planning)",
+      "pills": [
+        "next 14",
+        "tamagui",
+        "gluestack",
+        "supabase",
+        "unistyles",
+        "svelte",
+        "graphql"
+      ]
+    }
+  },
   "work": [
     {
       "id": "dolby-lm",

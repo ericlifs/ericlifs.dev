@@ -8,6 +8,7 @@ import TypeAnimation from "./components/type-animation";
 import ContactCards from "./components/contact-cards";
 import ContactForm from "./components/contact-form";
 import WorkExperience from "./components/work-experience";
+import AboutMe from "./components/about-me";
 import LottieAnimation from "./components/lottie-animation";
 
 export default function Home() {
@@ -40,6 +41,7 @@ export default function Home() {
 			</div>
 
 			<div className="mx-auto w-full max-lg:px-5 lg:max-w-5xl space-y-20">
+				<AboutMe />
 				<WorkExperience />
 				<ContactCards />
 				<ContactForm />
