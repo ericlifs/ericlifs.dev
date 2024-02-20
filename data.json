@@ -83,6 +83,25 @@
       ]
     },
     {
+      "id": "aerolineas",
+      "image": {
+        "src": "/work/aerolineas.svg"
+      },
+      "link": "https://www.audi.com/en/myaudi.html",
+      "role": "Aerolineas Argentinas - Technical Lead & Frontend Engineer",
+      "description": "myAudi is the key to the digital, networked world of Audi. This app is where the users will find innovative services that can now use even more efficiently thanks to myAudi. Within this portal a variety of activities can be done, such as schedule a service appointment, get personal vehicle details, receive a vehicle status report, be informed of news centred round Audi, change the setting for all the services or send personal GPS destinations to an Audi vehicle.",
+      "pills": [
+        "React",
+        "React Native",
+        "Redux",
+        "Styled Components",
+        "REST API",
+        "Jira",
+        "Git",
+        "SCRUM"
+      ]
+    },
+    {
       "id": "dolby-xp",
       "image": {
         "src": "/work/dolby.svg"
@@ -106,20 +125,18 @@
       ]
     },
     {
-      "id": "dolby-professional",
+      "id": "audi",
       "image": {
-        "src": "/work/dolby.svg"
+        "src": "/work/audi.svg"
       },
       "link": "https://www.audi.com/en/myaudi.html",
-      "role": "Dolby Professional - Frontend Engineer",
-      "description": "Architectured and developed from scratch a cross-platform site (web, ios & tvos app) for Dolby, the largest American company specialized in audio noise reduction and audio encoding/compression.",
+      "role": "myAudi 2.0 - Frontend Engineer",
+      "description": "myAudi is the key to the digital, networked world of Audi. This app is where the users will find innovative services that can now use even more efficiently thanks to myAudi. Within this portal a variety of activities can be done, such as schedule a service appointment, get personal vehicle details, receive a vehicle status report, be informed of news centred round Audi, change the setting for all the services or send personal GPS destinations to an Audi vehicle.",
       "pills": [
-        "VueJS",
-        "VueX",
-        "Sass",
-        "Optimizely/EPI",
-        "REST API",
-        "Monorepo",
+        "React",
+        "MobX",
+        "Styled Components",
+        "GraphQL",
         "Jira",
         "Git",
         "SCRUM"
@@ -137,37 +154,20 @@
       "pills": ["VueJS", "VueX", "Sass", "Epi Server", "Jira", "Git", "SCRUM"]
     },
     {
-      "id": "aerolineas",
+      "id": "dolby-professional",
       "image": {
-        "src": "/work/aerolineas.svg"
+        "src": "/work/dolby.svg"
       },
       "link": "https://www.audi.com/en/myaudi.html",
-      "role": "Aerolineas Argentinas - Technical Lead & Frontend Engineer",
-      "description": "myAudi is the key to the digital, networked world of Audi. This app is where the users will find innovative services that can now use even more efficiently thanks to myAudi. Within this portal a variety of activities can be done, such as schedule a service appointment, get personal vehicle details, receive a vehicle status report, be informed of news centred round Audi, change the setting for all the services or send personal GPS destinations to an Audi vehicle.",
+      "role": "Dolby Professional - Frontend Engineer",
+      "description": "Architectured and developed from scratch a cross-platform site (web, ios & tvos app) for Dolby, the largest American company specialized in audio noise reduction and audio encoding/compression.",
       "pills": [
-        "React",
-        "React Native",
-        "Redux",
-        "Styled Components",
+        "VueJS",
+        "VueX",
+        "Sass",
+        "Optimizely/EPI",
         "REST API",
-        "Jira",
-        "Git",
-        "SCRUM"
-      ]
-    },
-    {
-      "id": "audi",
-      "image": {
-        "src": "/work/audi.svg"
-      },
-      "link": "https://www.audi.com/en/myaudi.html",
-      "role": "myAudi 2.0 - Frontend Engineer",
-      "description": "myAudi is the key to the digital, networked world of Audi. This app is where the users will find innovative services that can now use even more efficiently thanks to myAudi. Within this portal a variety of activities can be done, such as schedule a service appointment, get personal vehicle details, receive a vehicle status report, be informed of news centred round Audi, change the setting for all the services or send personal GPS destinations to an Audi vehicle.",
-      "pills": [
-        "React",
-        "MobX",
-        "Styled Components",
-        "GraphQL",
+        "Monorepo",
         "Jira",
         "Git",
         "SCRUM"

@@ -7,9 +7,11 @@
     "enabled": true,
     "rules": {
       "recommended": true,
-      "performance": {
-        "noAccumulatingSpread": "off",
+      "suspicious": {
         "noArrayIndexKey": "off"
+      },
+      "performance": {
+        "noAccumulatingSpread": "off"
       }
     }
   }
