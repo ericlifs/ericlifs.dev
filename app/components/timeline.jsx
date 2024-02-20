@@ -1,11 +1,11 @@
 import tailshake from "tailshake";
 
+import SectionTitle from "./section-title";
+
 export const Timeline = ({ children, title }) => {
 	return (
 		<div className="w-full mb-16">
-			<h2 className="font-display text-2xl tracking-tight mb-8 text-white text-center lg:text-start">
-				{title}
-			</h2>
+			<SectionTitle title={title} />
 
 			{children}
 		</div>
