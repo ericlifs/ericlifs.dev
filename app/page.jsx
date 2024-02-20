@@ -3,7 +3,6 @@ import Image from "next/image";
 
 import data from "../data.json";
 
-import * as scrollAnimation from "./animations/scroll.json";
 import TypeAnimation from "./components/type-animation";
 import ContactCards from "./components/contact-cards";
 import ContactForm from "./components/contact-form";
@@ -36,7 +35,7 @@ export default function Home() {
 				</div>
 
 				<div className="absolute bottom-12 cursor-default">
-					<LottieAnimation animationData={scrollAnimation} width={80} />
+					<LottieAnimation />
 				</div>
 			</div>
 

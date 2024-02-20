@@ -2,7 +2,9 @@
 
 import Lottie from "react-lottie";
 
-export default function LottieAnimation({ animationData, width, height }) {
+import * as animationData from "../animations/scroll.json";
+
+export default function LottieAnimation({ animationData, width = 80, height }) {
 	return (
 		<Lottie
 			ariaRole=""
