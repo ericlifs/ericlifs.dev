@@ -48,8 +48,8 @@ dependencies:
     specifier: ^3.2.0
     version: 3.2.0(prop-types@15.8.1)(react-dom@18.2.0)(react@18.2.0)
   react-wrap-balancer:
-    specifier: ^0.4.0
-    version: 0.4.1(react@18.2.0)
+    specifier: ^1.1.0
+    version: 1.1.0(react@18.2.0)
   tailshake:
     specifier: ^0.0.3
     version: 0.0.3(autoprefixer@10.4.17)(postcss@8.4.35)
@@ -3625,10 +3625,10 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /react-wrap-balancer@0.4.1(react@18.2.0):
-    resolution: {integrity: sha512-KbIwnnCBCxj5u4yr76NXKKriM94VL33LtO9bE0sedCp4yqdGYJD8TGU+2zlPxkguH5xxKxdapBtMYdMAODk/QQ==}
+  /react-wrap-balancer@1.1.0(react@18.2.0):
+    resolution: {integrity: sha512-EhF3jOZm5Fjx+Cx41e423qOv2c2aOvXAtym2OHqrGeMUnwERIyNsRBgnfT3plB170JmuYvts8K2KSPEIerKr5A==}
     peerDependencies:
-      react: ^18.0.0
+      react: '>=16.8.0 || ^17.0.0 || ^18'
     dependencies:
       react: 18.2.0
     dev: false
