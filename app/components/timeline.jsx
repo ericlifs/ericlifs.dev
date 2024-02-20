@@ -39,7 +39,9 @@ export const TimelineEvent = ({ active, children, last, className }) => {
 					)}
 				</div>
 			</div>
-			<div className="mt-[-4px] flex flex-col gap-6">{children}</div>
+			<div className="mt-[-4px] flex flex-col gap-6 w-full overflow-hidden">
+				{children}
+			</div>
 		</div>
 	);
 };
