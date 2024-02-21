@@ -14,7 +14,7 @@
   }
 
   .glow-effect {
-    @apply border border-zinc-600 font-display bg-neutral-900 rounded-xl hover:border-zinc-400/50 glow:border-glow glow:ring-glow glow:bg-glow/[.1] focus:border-zinc-400;
+    @apply border border-zinc-600 font-display bg-neutral-900 rounded-xl hover:border-zinc-400/50 glow:border-glow glow:ring-glow glow:bg-glow/[.1] focus:border-zinc-400 focus:placeholder:text-white;
   }
 
   .triangle {
