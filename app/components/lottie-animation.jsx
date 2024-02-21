@@ -4,7 +4,7 @@ import Lottie from "react-lottie";
 
 import * as animationData from "../animations/scroll.json";
 
-export default function LottieAnimation({ animationData, width = 80, height }) {
+export default function LottieAnimation() {
 	return (
 		<Lottie
 			ariaRole=""
@@ -16,8 +16,8 @@ export default function LottieAnimation({ animationData, width = 80, height }) {
 					preserveAspectRatio: "xMidYMid slice",
 				},
 			}}
-			height={height}
-			width={width}
+			height={100}
+			width={80}
 		/>
 	);
 }
