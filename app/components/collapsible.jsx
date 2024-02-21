@@ -26,7 +26,7 @@ export default function Collapsible({ children, items }) {
 				<button
 					onClick={toggleExpanded}
 					type="button"
-					className="flex mt-10 items-center justify-center rounded-xl px-10 py-3 text-white font-display border border-zinc-600 glow:border-glow glow:ring-glow glow:bg-glow/[.15]"
+					className="flex mt-10 items-center justify-center px-10 py-3 text-white glow-effect"
 				>
 					<span className="font-medium text-base">
 						Show {expanded ? "less" : `${moreItemsCount} more`}

@@ -11,6 +11,7 @@ module.exports = {
 		extend: {
 			colors: {
 				primary: "rgb(217 119 6)",
+				"neutral-950": "rgb(19 19 19)",
 			},
 			typography: {
 				quoteless: {

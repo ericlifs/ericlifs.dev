@@ -19,7 +19,7 @@ export default function ContactForm() {
 							Name
 						</label>
 						<input
-							className="w-full rounded-xl p-3 text-base outline-none border text-white bg-black border-zinc-600 focus:border-zinc-600 transition ease font-display glow:border-glow glow:ring-glow glow:bg-glow/[.1]"
+							className="w-full rounded-xl p-3 text-base outline-none text-white glow-effect"
 							placeholder="Name"
 							type="text"
 							id="name"
@@ -34,7 +34,7 @@ export default function ContactForm() {
 								Email
 							</label>
 							<input
-								className="w-full rounded-xl p-3 text-base outline-none border text-white bg-black border-zinc-600 focus:border-zinc-600 transition ease font-display glow:border-glow glow:ring-glow glow:bg-glow/[.1]"
+								className="w-full rounded-xl p-3 text-base outline-none text-white glow-effect"
 								placeholder="Email"
 								type="email"
 								id="email"
@@ -48,7 +48,7 @@ export default function ContactForm() {
 								Phone
 							</label>
 							<input
-								className="w-full rounded-xl p-3 text-base outline-none border text-white bg-black border-zinc-600 focus:border-zinc-600 transition ease font-display glow:border-glow glow:ring-glow glow:bg-glow/[.1]"
+								className="w-full rounded-xl p-3 text-base outline-none text-white glow-effect"
 								placeholder="Phone"
 								type="tel"
 								id="phone"
@@ -63,7 +63,7 @@ export default function ContactForm() {
 							Message
 						</label>
 						<textarea
-							className="w-full h-32 rounded-xl p-3 text-base outline-none border text-white bg-black border-zinc-600 focus:border-zinc-600 transition ease font-display glow:border-glow glow:ring-glow glow:bg-glow/[.1]"
+							className="w-full h-32 rounded-xl p-3 text-base outline-none text-white glow-effect"
 							placeholder="Message"
 							id="message"
 							name="message"
@@ -73,7 +73,7 @@ export default function ContactForm() {
 
 					<button
 						type="submit"
-						className="flex items-center justify-center rounded-xl px-10 py-3 text-white font-display border border-zinc-600 glow:border-glow glow:ring-glow glow:bg-glow/[.15]"
+						className="flex items-center justify-center rounded-xl px-10 py-3 text-white glow-effect"
 					>
 						<span className="font-medium text-base">Send</span>
 

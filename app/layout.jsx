@@ -47,11 +47,11 @@ export default function RootLayout({ children }) {
 		<html
 			lang="en"
 			className={tailshake(
-				"bg-black",
+				"bg-neutral-950",
 				[inter.variable, calSans.variable].join(" "),
 			)}
 		>
-			<body className="bg-gradient-to-tl from-black via-zinc-700/20 pb-20 to-black">
+			<body>
 				<Analytics />
 				{children}
 			</body>
