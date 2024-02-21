@@ -7,13 +7,17 @@
     -webkit-text-stroke: 1px rgba(255,255,255,0.3);
   }
 
-  .glow-effect {
-    @apply border border-zinc-600 font-display bg-neutral-900 rounded-xl hover:border-zinc-400/50 glow:border-glow glow:ring-glow glow:bg-glow/[.1] focus:border-zinc-400;
-  }
-
   body {
     background: linear-gradient(90deg,#131313 17px,transparent 1%) 50%,linear-gradient(#131313 17px,transparent 1%) 50%,#3d3d3d;
     background-size: 18px 18px;
     @apply pb-20;
+  }
+
+  .glow-effect {
+    @apply border border-zinc-600 font-display bg-neutral-900 rounded-xl hover:border-zinc-400/50 glow:border-glow glow:ring-glow glow:bg-glow/[.1] focus:border-zinc-400;
+  }
+
+  .triangle {
+    @apply before:content-[''] before:absolute before:left-1/2 before:-translate-x-1/2 before:-top-[5px] before:border-l-[6px] before:border-l-transparent before:border-b-[10px] before:border-black before:border-r-[6px] before:border-r-transparent
   }
 }
