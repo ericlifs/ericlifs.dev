@@ -9,6 +9,7 @@ import ContactForm from "./components/contact-form";
 import WorkExperience from "./components/work-experience";
 import AboutMe from "./components/about-me";
 import LottieAnimation from "./components/lottie-animation";
+import SideProjects from "./components/side-projects";
 
 export default function Home() {
 	return (
@@ -42,6 +43,7 @@ export default function Home() {
 			<div className="mx-auto w-full max-lg:px-5 lg:max-w-5xl space-y-20">
 				<AboutMe />
 				<WorkExperience />
+				<SideProjects />
 				<ContactCards />
 				<ContactForm />
 			</div>

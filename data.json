@@ -18,6 +18,7 @@
         "next 14",
         "vite",
         "react",
+        "typescript",
         "tailwindcss",
         "styled-components",
         "zustand",
@@ -29,6 +30,8 @@
       "pills": [
         "expo",
         "expo router",
+        "typescript",
+        "react-native",
         "nativewind",
         "styled-components",
         "zustand",
@@ -96,7 +99,7 @@
         "src": "/work/aerolineas.svg"
       },
       "link": "https://www.aerolineas.com.ar/",
-      "role": "Aerolineas Argentinas - Technical Lead & Frontend Engineer",
+      "role": "Aerolineas Argentinas - Frontend Technical Leader & Engineer",
       "description": "",
       "pills": [
         "React",
@@ -201,6 +204,22 @@
       ]
     }
   ],
+  "side-projects": [
+    {
+      "id": "chatgpt-expo-app",
+      "name": "chatgpt-expo-app",
+      "link": "https://github.com/ericlifs/chatgpt-expo-app",
+      "description": "Expo managed app integrated with OpenAI api including chat-gpt asking and voice-to-text transformation features.",
+      "stack": [
+        "react-native",
+        "expo",
+        "typescript",
+        "nativewind",
+        "react-query",
+        "open-ai"
+      ]
+    }
+  ],
   "contact": {
     "form": {
       "formId": "xnqedwkb"
@@ -225,15 +244,5 @@
         "link": "https://github.com/ericlifs"
       }
     ]
-  },
-
-  "description": "My hobby projects, most of them are Nextjs apps deployed to Vercel.",
-  "githubUsername": "octocat",
-  "avatarUrl": "",
-  "displayName": "",
-  "email": "",
-  "projects": {
-    "blacklist": [],
-    "heroNames": []
   }
 }
