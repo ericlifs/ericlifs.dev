@@ -15,15 +15,15 @@ export default function SideProjects() {
 			<SectionTitle title="Side Projects" />
 			<div className="grid w-full grid-cols-1 gap-8 mx-auto md:grid-cols-3 lg:gap-4">
 				{data["side-projects"].map((card) => (
-					<Card key={card.id}>
+					<Card key={card.id} className="h-full">
 						<Link
 							href={card.link}
 							target="_blank"
-							className="relative flex flex-col gap-4 md:gap-6 duration-700 group/card p-4 sm:p-8 lg:p-4"
+							className="relative flex flex-col gap-4 md:gap-6 duration-700 group/card p-4 sm:p-8 lg:p-4 h-full"
 						>
 							<span className="font-display text-white">{card.name}</span>
 
-							<span className="text-sm transition-all duration-150 text-zinc-200 group-hover/card:text-white font-display">
+							<span className="text-sm transition-all duration-150 text-zinc-200 group-hover/card:text-white font-display flex-1">
 								{card.description}
 							</span>
 

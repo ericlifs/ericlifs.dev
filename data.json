@@ -206,6 +206,20 @@
   ],
   "side-projects": [
     {
+      "id": "sqlite-expo-app",
+      "name": "sqlite-expo-app",
+      "link": "https://github.com/ericlifs/expo-sqlite-app",
+      "description": "Expo managed app integrated with SQLite local DB including CRUD features.",
+      "stack": [
+        "react-native",
+        "expo",
+        "typescript",
+        "nativewind",
+        "sqlite",
+        "react-query"
+      ]
+    },
+    {
       "id": "chatgpt-expo-app",
       "name": "chatgpt-expo-app",
       "link": "https://github.com/ericlifs/chatgpt-expo-app",
@@ -215,8 +229,8 @@
         "expo",
         "typescript",
         "nativewind",
-        "react-query",
-        "open-ai"
+        "open-ai",
+        "react-query"
       ]
     }
   ],
