@@ -206,6 +206,13 @@
   ],
   "side-projects": [
     {
+      "id": "supabase-expo-app",
+      "name": "supabase-expo-app",
+      "link": "https://github.com/ericlifs/supabase-expo-app",
+      "description": "Expo managed app integrated with Supabase DB for testing auth, database and storage funcitonalities.",
+      "stack": ["react-native", "expo", "typescript", "nativewind", "supabase"]
+    },
+    {
       "id": "sqlite-expo-app",
       "name": "sqlite-expo-app",
       "link": "https://github.com/ericlifs/expo-sqlite-app",
